@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-reactionic-meteor",
+  "name": "reactionic-issue-31",
   "private": true,
   "scripts": {
     "start": "meteor run",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import { IonNavView, IonView, IonNavBar, IonSideMenuContainer,
-  IonSideMenus, IonSideMenu, IonSideMenuContent } from 'reactionic';
+  IonSideMenus, IonSideMenu, IonSideMenuContent, IonButton } from 'reactionic';
 
 const Layout = (props, context) => (
   <IonSideMenuContainer disable="right" {...props}>
@@ -15,14 +15,14 @@ const Layout = (props, context) => (
             <Link
               to="/helloworld"
               className="item"
-              onClick={ () => { context.ionSnapper.toggle('left'); } }
+              onClick={() => { context.ionSnapper.toggle('left'); }}
             >
             HelloWorld Page
             </Link>
             <Link
               to="/foobar"
               className="item"
-              onClick={ () => { context.ionSnapper.toggle('left'); } }
+              onClick={() => { context.ionSnapper.toggle('left'); }}
             >
             Foobar Page
             </Link>
@@ -31,8 +31,13 @@ const Layout = (props, context) => (
       </IonSideMenu>
     </IonSideMenus>
     <IonSideMenuContent>
-      <IonNavBar customClasses="bar-dark"
+      <IonNavBar
+        customClasses="bar-dark"
         title="Boilerplate ReactIonic Meteor"
+        leftButton={<IonButton
+          icon="ion-navicon"
+          onClick={() => { context.ionSnapper.toggle('left'); }}
+        />}
         {...props}
       />
 

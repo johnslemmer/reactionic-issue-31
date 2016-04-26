@@ -1,3 +1,3 @@
-# boilerplate-reactionic-meteor
+# reactionic-issue-31
 
-A simple app to make getting started on reactionic-meteor apps easier
+A simple app trying to capture issue [#31](https://github.com/reactionic/reactionic/issues/31)
