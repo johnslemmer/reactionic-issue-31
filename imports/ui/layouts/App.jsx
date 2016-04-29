@@ -23,7 +23,7 @@ export default class App extends React.Component {
     const platform = getPlatform(this.state.platformOverride);
 
     return (
-      <IonBody platform={platform} >
+      <IonBody platform={platform} location={this.props.location}>
         {this.props.children}
       </IonBody>
     );
